@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    // height: 100vh;
+    background-color: black;
+    position: relative;
+    // padding-left: 250px;
+    // padding-right: 250px;
+    font-family: 'Arvo', serif;
+}
+
+
+/* This section contains the design for the header content i.e. the navigation bar of the website */
+
+header {
+    width: 100%;
+    // height: 90px;
+    top: 0;
+    color: #FFD700;
+    nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 5em;
+        .logo {
+            width: 100px;
+            img {
+                width: 100%;
+            }
+        }
+        .nav-link-grp {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .nav-link {
+                list-style: none;
+                font-size: .7em;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 21px;
+                text-align: center;
+                letter-spacing: 0.25em;
+                a {
+                    text-decoration: none;
+                    color: #FFD700;
+                    opacity: 0.5;
+                    &:hover {
+                        text-decoration: none;
+                        color: #FFD700;
+                        opacity: 1;
+                    }
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+                &:not(:last-child) {
+                    list-style: none;
+                    padding: 0px 20px 0px 20px;
+                }
+                &.contact a {
+                    padding: 10px 20px;
+                    border: 2px solid #ffd900;
+                    opacity: .5;
+                    border-radius: 20px;
+                    &.active {
+                        opacity: 1;
+                        background: #FFD700;
+                        color: black;
+                    }
+                    &:hover {
+                        background: #FFD700;
+                        color: black;
+                        opacity: 1;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* This section contains the design for the main content i.e. the body of the website */
+
+main {
+    text-align: center;
+    padding: 5em 5em;
+    color: #FFD700;
+    #pars-viliris-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #pars-viliris {
+            width: 420px;
+            position: absolute;
+            // margin-top: 17%;
+            animation: fill 2s ease forwards 5s;
+            path:nth-child(1) {
+                stroke-dasharray: 221.59059143066406;
+                stroke-dashoffset: 221.59059143066406;
+                animation: line-animate 2s ease forwards 1s;
+            }
+            path:nth-child(2) {
+                stroke-dasharray: 251.78372192382812;
+                stroke-dashoffset: 251.78372192382812;
+                animation: line-animate 2s ease forwards 1.3s;
+            }
+            path:nth-child(3) {
+                stroke-dasharray: 278.47705078125;
+                stroke-dashoffset: 278.47705078125;
+                animation: line-animate 2s ease forwards 1.6s;
+            }
+            path:nth-child(4) {
+                stroke-dasharray: 246.1055450439453;
+                stroke-dashoffset: 246.1055450439453;
+                animation: line-animate 2s ease forwards 1.9s;
+            }
+            path:nth-child(5) {
+                stroke-dasharray: 244.78414916992188;
+                stroke-dashoffset: 244.78414916992188;
+                animation: line-animate 2s ease forwards 2.2s;
+            }
+            path:nth-child(6) {
+                stroke-dasharray: 155.12562561035156;
+                stroke-dashoffset: 155.12562561035156;
+                animation: line-animate 2s ease forwards 2.5s;
+            }
+            path:nth-child(7) {
+                stroke-dasharray: 278.47955322265625;
+                stroke-dashoffset: 278.47955322265625;
+                animation: line-animate 2s ease forwards 2.8s;
+            }
+            path:nth-child(8) {
+                stroke-dasharray: 155.1239624023437;
+                stroke-dashoffset: 155.1239624023437;
+                animation: line-animate 2s ease forwards 3.1s;
+            }
+            path:nth-child(9) {
+                stroke-dasharray: 206.92718505859375;
+                stroke-dashoffset: 206.92718505859375;
+                animation: line-animate 2s ease forwards 3.4s;
+            }
+            path:nth-child(10) {
+                stroke-dasharray: 155.1239013671875;
+                stroke-dashoffset: 155.1239013671875;
+                animation: line-animate 2s ease forwards 3.7s;
+            }
+            path:nth-child(11) {
+                stroke-dasharray: 246.10787963867188;
+                stroke-dashoffset: 246.10787963867188;
+                animation: line-animate 2s ease forwards 4s;
+            }
+        }
+    }
+    #main-content {
+        // position: relative;
+        width: 30%;
+        height: 21px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: .8em;
+        line-height: 21px;
+        /* identical to box height */
+        text-align: justify;
+        letter-spacing: 0.25em;
+        color: #969595;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        // margin-top: -2.5em;
+        .gpg-key {
+            padding: 3em 5em;
+            font-size: .6em;
+            text-align: center;
+            letter-spacing: .2em;
+            border: 2px solid #FFD700;
+            border-radius: 5em;
+            line-height: 1.5em;
+            margin: 0 10em;
+            h3 {
+                letter-spacing: .5em;
+            }
+            p {
+                margin: 2em 0;
+                color: #969595;
+            }
+        }
+        .email {
+            margin-top: -3em;
+            margin-bottom: 4.5em;
+            font-size: 1.2em;
+            color: #FFD700;
+            letter-spacing: .2em;
+            p span {
+                // margin-right: .7em;
+                color: #969595;
+                &:nth-child(1) {
+                    margin-right: .7em;
+                }
+            }
+        }
+    }
+    h1 {
+        letter-spacing: .3em;
+        font-size: 2em;
+        margin-top: -.7em;
+        color: #dfbe04;
+        text-align: center;
+        // margin-left: 10.66em;
+    }
+    .publications {
+        margin: 5em 20em;
+        border-bottom: 1px solid #FFD700;
+        padding-bottom: .5em;
+        .date {
+            text-align: left;
+            color: #969595;
+            letter-spacing: .15em;
+            font-size: .75em;
+        }
+        .title {
+            margin-top: .2em;
+            text-align: left;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            font-size: 1.6em;
+        }
+        .summary {
+            // text-align: left;
+            margin-top: 1em;
+            color: #969595;
+            text-align: justify;
+            font-size: .9em;
+            letter-spacing: .09em;
+            line-height: 1.3em;
+        }
+        .links {
+            text-align: right;
+            margin-top: 1em;
+            a {
+                margin-left: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #FFD700;
+                letter-spacing: .1em;
+                font-size: .7em;
+                opacity: .5;
+                span img {
+                    width: 1.4em;
+                    margin-right: .3em;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .performance-title {
+        text-align: left;
+        margin: 0;
+    }
+    .intro {
+        text-align: left;
+        margin-top: 2em;
+        font-size: .95em;
+        color: #969595;
+        width: 70%;
+        line-height: 2em;
+    }
+}
+
+@keyframes line-animate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    0% {
+        fill: transparent;
+    }
+    50% {
+        fill: #FFD700;
+    }
+    100% {
+        fill: transparent;
+    }
+}
